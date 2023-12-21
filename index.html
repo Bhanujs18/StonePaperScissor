@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+
+    <title>Gamify</title>
+</head>
+<body>
+    <div class="scoreBoardDiv">
+    <div class="scoreBoard">
+    <h1 id="heading">Rock  <br /> Paper <br /> Scissor</h1>
+    <div class="score_boxs">
+    <div id="score_box">
+        <p id="player">Computer Score</p>
+        <p id="computerScore">0</p>
+    </div>
+    <div  id="score_box">
+        <p id="player">Your Score</p>
+        <p id="humanScore">0</p>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div id="imageBox">
+<div class="imageDivs">
+    <div class="imageDiv">
+    <img onclick="clicked('stone')" id="stone" src="./images/stone.png">
+</div>
+
+<div class="imageDiv">
+    <img onclick="clicked('paper')" id="paper" src="./images/paper.png">
+</div >
+
+<div class="imageDiv">
+        <img onclick="clicked('scissor')" id="scissor" src="./images/scissor.png">
+</div>
+
+</div>
+</div>
+
+<div id="win_screen">
+    <div id="win_container">
+        <div   style="display: flex; align-items: center; gap: 1rem;">        
+             <img id="human" src="">
+                <div id="winner"></div> 
+            <img  id="computer" src="" style="border: 5px green solid;">
+     
+    </div>
+    </div>
+      <button onclick="playagain()"  id="button">Play Again</button>
+
+</div>
+
+
+<div class="rules" >
+
+
+    <ul id="rules_box" style="display: block;">
+        <button id= "close_button" onclick="close_box()">Close</button>
+    <li id="rule">Rock beats scissors, scissors beat paper, and paper beats rock.</li> 
+    <li id="rule">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+    <li id="rule">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+    <li id="rule">If both players lay down the same hand, each player lays down another hand</li>
+      </ul>
+
+<!-- <button onclick="closebox">Close</button> -->
+  <button id= "rules" onclick="display_rules()">Rules</button>
+  <a href="./hurray.html" id="next"> <button id= "rules" >Next</button></a>
+</div>
+
+
+<script src="./script.js"  ></script>
+
+</body>
+</html>
