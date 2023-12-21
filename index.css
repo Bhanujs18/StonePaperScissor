@@ -1,0 +1,208 @@
+body {
+    background-color:  #58a31b;
+    font-family: 'Kanit', sans-serif;
+font-family: 'Silkscreen', sans-serif;
+}
+
+#heading{
+    color: white;
+}
+
+.scoreBoardDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.scoreBoard{
+    border: 2px white solid;
+    border-radius: 15px;
+    display: flex;
+    width: 70%;
+   padding: 0.9rem;
+    justify-content: space-between;
+}
+
+.score_boxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#score_box{
+    border-radius: 15px;
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+#player{
+    text-align: center;
+}
+
+#score{
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    font-size: 3rem;
+}
+
+#stone , #paper, #scissor{
+background-color: #fefefe;
+padding: 1rem;
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+}
+
+.imageDiv{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.imageDivs{
+    width: max-content;
+    padding: 1rem;
+    gap: 6rem;
+    width: 28rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    :nth-child(1){
+        background-color: #0074b6;
+        border-radius: 50%;
+    }
+    :nth-child(2){
+        background-color: #bd00ff;
+        border-radius: 50%;
+    }
+    :nth-child(3){
+        background-color: #ffa943;
+        border-radius: 50%;
+    }
+}
+
+
+#imageBox{
+    width: 100%;
+    display: flex;
+    padding: 2rem 0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules{
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    gap: 1rem;
+    button{
+        color: white;
+        background: transparent;
+        border: 1px white solid;
+        cursor: pointer;
+        padding: 0.4rem 1rem;
+    }
+}
+
+#button{
+    color: white;
+    background: transparent;
+    border: 1px white solid;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+}
+
+#win_screen{
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#win_container{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#rules_box{
+    z-index: 99;
+    display: block;
+    display: flex;
+    background-color: #004429;
+    position: absolute;
+    top: 60%;
+    color: white;
+    border-radius: 20px;
+    border: 4px white solid;
+    width: 25rem;;
+    padding: 1.5rem;
+    right: 1%;
+    gap: 2rem;
+}
+
+
+#human , #computer{
+    background-color: #fefefe;
+padding: 1rem;
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+}
+
+#close_button{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    border: none;
+    color: red;
+    right: 0%;
+    justify-content: end;
+}
+
+#next{
+    text-decoration: none;
+}
+
+.container{
+display: flex;
+align-items: center;
+width: 100%;
+height: 100vh;
+justify-content: center;
+padding: 7rem 0rem;
+position: relative;
+}
+
+#stars{
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+#trophy{
+    top: 30%;
+    left: 50%;
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+#hurray{
+    text-align: center;
+    color: white;
+display: block;
+}
+
+#computerScore , #humanScore{
+    text-align: center;
+}
